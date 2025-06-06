@@ -4,6 +4,8 @@ const path = require('path');
 const dbPath = path.join(__dirname, 'database', 'saas_platform_full.db');
 // 'C:\\Users\\ymadh\\OneDrive\\Desktop\\Projects\\taskmanager-backend\\db\\saas_platform_full.db';
 
+console.log("dbpath",dbPath)
+
 const db = new sqlite3.Database(dbPath, sqlite3.OPEN_READWRITE, (err) => {
   if (err) {
     console.error('❌ SQLite DB connection failed:', err.message);
