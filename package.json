@@ -19,6 +19,7 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.15.1",
+    "multer": "^2.0.1",
     "react-scripts": "^5.0.1",
     "sqlite3": "^5.1.6",
     "uuid": "^11.1.0"
