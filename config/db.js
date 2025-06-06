@@ -1,10 +1,10 @@
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 
-const dbPath = path.join(__dirname, 'database', 'saas_platform_full.db');
+const dbPath = path.join(__dirname, 'db', 'saas_platform_full.db');
 // 'C:\\Users\\ymadh\\OneDrive\\Desktop\\Projects\\taskmanager-backend\\db\\saas_platform_full.db';
 
-console.log("dbpath",dbPath)
+console.log("dbpath",dbPath,__dirname)
 
 const db = new sqlite3.Database(dbPath, sqlite3.OPEN_READWRITE, (err) => {
   if (err) {
